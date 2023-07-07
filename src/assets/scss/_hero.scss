@@ -1,0 +1,10 @@
+@layer components {
+	.hero {
+		@apply lg:flex lg:basis-0 justify-between mx-auto lg:w-[78%] w-full;
+
+		&_button {
+			@apply px-6 mb-12 py-3 bg-black text-white rounded-lg hover:bg-white hover:text-black
+			hover:border-black border transition-all duration-300
+		}
+	}
+}

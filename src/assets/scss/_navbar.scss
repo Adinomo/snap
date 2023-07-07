@@ -1,0 +1,22 @@
+@layer components {
+	.navbar {
+		@apply px-4 py-4 w-full flex items-center justify-between md:justify-normal;
+		&_collapse {
+			@apply text-sm text-gray-500 ms-14 md:flex items-center md:w-full px-2 pt-20 md:pt-0
+			justify-between  w-[60%] fixed md:static bg-white h-[100%] top-0 md:h-auto right-0 
+			transition-all ease-in-out duration-300;
+		}
+	}
+	.nav-hover {
+		@apply hover:border-black hover:text-black duration-500 ease-in-out cursor-pointer transition-all;
+	}
+
+	.dropdown {
+		@apply md:absolute bg-white md:custom_shadow rounded-lg px-4 py-3 md:py-5 w-[8.5rem] right-0 top-[2rem] 
+		transition-all duration-500 ease-in-out;
+	}
+	.custom_shadow {
+		box-shadow: rgba(112, 112, 112, 0.1) 0px 8px 24px,
+			rgba(112, 112, 112, 0.1) 0px 9px 56px, rgba(112, 112, 112, 0.1) 0px 10px 80px;
+	}
+}
